@@ -1,4 +1,6 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
+
+    "use strict";
 
     require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
 
@@ -78,9 +80,9 @@ module.exports = function(grunt) {
             }
         },
 
-        htmlmin: { // Task
-            dist: { // Target
-                options: { // Target options
+        htmlmin: {
+            dist: {
+                options: {
                     removeComments: true,
                     collapseWhitespace: true
                 },
@@ -94,20 +96,16 @@ module.exports = function(grunt) {
         sass: {
             build: {
                 files: {
-                    'build/css/master.css': 'assets/sass/master.scss'
+                    'src/css/sass.css': 'src/sass/sass.scss'
                 }
             }
         },
 
-        cssc: {
-            build: {
+        compass: {
+            dist: {
                 options: {
-                    consolidateViaDeclarations: true,
-                    consolidateViaSelectors: true,
-                    consolidateMediaQueries: true
-                },
-                files: {
-                    'dist/css/master.css': 'src/css/master.css'
+                    sassDir: 'src/sass/',
+                    cssDir: 'src/css/',
                 }
             }
         },
@@ -144,11 +142,6 @@ module.exports = function(grunt) {
         },
 
         cssmin: {
-            add_banner: {
-                options: {
-                    banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-                },
-            },
             build: {
                 files: [{
                     expand: true,
@@ -159,6 +152,21 @@ module.exports = function(grunt) {
                     extDot: 'last'
                 }]
             }
+        },
+
+        autoprefixer: {
+
+            options: {
+                browsers: ['last 2 versions', 'ie 9']
+            },
+
+            // prefix all files
+            multiple_files: {
+                expand: true,
+                flatten: true,
+                src: ['src/**/*.css', '!src/**/*.min.css'], // -> src/css/file1.css, src/css/file2.css
+                dest: 'src/temp/' // -> dest/css/file1.css, dest/css/file2.css
+            },
         },
 
         jshint: {
@@ -175,9 +183,6 @@ module.exports = function(grunt) {
         },
 
         uglify: {
-            options: {
-                banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-            },
             build: {
                 files: [{
                     expand: true,
@@ -287,7 +292,7 @@ module.exports = function(grunt) {
             },
             task: {
                 files: ['src/**/*'],
-            //    tasks: [''],
+                tasks: ['compass'],
             },
         }
 
@@ -298,9 +303,6 @@ module.exports = function(grunt) {
 
     // CSS tasks.
     grunt.registerTask('buildcss', ['sass', 'cssc', 'cssmin']);
-
-    // Cache busting tasks.
-    // grunt.registerTask('cachebust', ['cachebreaker', 'hash']);
 
     // Bump release version numbers
     grunt.registerTask('release', ['shell:bumpVersion']);
