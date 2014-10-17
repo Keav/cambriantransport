@@ -4,14 +4,12 @@ module.exports = function (grunt) {
 
     require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
 
-    // Project configuration.
     grunt.initConfig({
 
         pkg: grunt.file.readJSON('package.json'),
 
         clean: {
             build: ['dist/css/custom**.*', 'dist/js/custom**.*'],
-
         },
 
         imagemin: {
@@ -95,8 +93,13 @@ module.exports = function (grunt) {
 
         sass: {
             build: {
+                options: {
+                    style: 'expanded',
+                    sourcemap: 'none',
+                    precision: 10,
+                },
                 files: {
-                    'src/css/sass.css': 'src/sass/sass.scss'
+                    'src/css/sass.css': 'src/scss/sass.scss'
                 }
             }
         },
@@ -104,8 +107,13 @@ module.exports = function (grunt) {
         compass: {
             dist: {
                 options: {
-                    sassDir: 'src/sass/',
-                    cssDir: 'src/css/',
+                    require: 'susy',
+                    sassDir: 'src/scss',
+                    cssDir: 'src/css',
+                    javascriptsDir: 'src/js',
+                    fontsDir: 'src/fonts',
+                    imagesDir: 'src/images',
+                    outputStyle: 'expanded'
                 }
             }
         },
@@ -155,18 +163,18 @@ module.exports = function (grunt) {
         },
 
         autoprefixer: {
-
             options: {
                 browsers: ['last 2 versions', 'ie 9']
             },
 
             // prefix all files
-            multiple_files: {
+            files: {
                 expand: true,
                 flatten: true,
-                src: ['src/**/*.css', '!src/**/*.min.css'], // -> src/css/file1.css, src/css/file2.css
-                dest: 'src/temp/' // -> dest/css/file1.css, dest/css/file2.css
-            },
+                cwd: 'src/css/',
+                src: '*.css',
+                dest: 'src/css/'
+            }
         },
 
         jshint: {
@@ -286,31 +294,47 @@ module.exports = function (grunt) {
             }
         },
 
+        connect: {
+            server: {
+                options: {
+                    livereload: true,
+                    hostname: 'localhost',
+                    port: 9001,
+                    base: 'src/',
+                    open: true
+                }
+            }
+        },
+
         watch: {
             options: {
-                livereload: true
+            //    livereload: true
             },
-            task: {
-                files: ['src/**/*'],
-                tasks: ['compass'],
+            sass: {
+                files: ['src/scss/sass.scss'],
+                tasks: ['sass'],
             },
+            livereload: {
+                files: ['src/**/*.html', 'src/**/*.css', 'src/**/*.js'],
+                options: {livereload: true}
+            }
         }
 
     });
 
     // Default task(s).
-    grunt.registerTask('default', ['watch']);
+    grunt.registerTask('default', ['connect', 'watch']);
 
     // CSS tasks.
-    grunt.registerTask('buildcss', ['sass', 'cssc', 'cssmin']);
+    grunt.registerTask('buildcss', ['sass', 'cssmin']);
 
     // Bump release version numbers
     grunt.registerTask('release', ['shell:bumpVersion']);
 
-    grunt.registerTask('distcode', ['clean', 'newer:htmlmin', 'newer:uglify', 'newer:cssmin', 'hashres', 'newer:copy', 'string-replace']);
+    grunt.registerTask('code', ['clean', 'newer:htmlmin', 'newer:uglify', 'newer:cssmin', 'hashres', 'newer:copy', 'string-replace']);
 
     // Interim Deployment
-    grunt.registerTask('all', ['clean', 'newer:imagemin', 'newer:htmlmin', 'newer:uglify', 'newer:cssmin', 'hashres', 'newer:copy', 'string-replace']);
+    grunt.registerTask('deploy', ['clean', 'newer:imagemin', 'newer:htmlmin', 'newer:uglify', 'newer:cssmin', 'hashres', 'newer:copy', 'string-replace']);
 
     grunt.registerTask('copysrc', ['clean', 'copy']);
 
