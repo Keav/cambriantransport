@@ -44,6 +44,18 @@ height:400px;
   background-color: #ddd;
 }
 
+.timber {
+  font-family: impact,arial;
+  font-size: 14rem;
+  line-height: 14rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin:0;
+  padding: 0;
+
+}
+
 .mask {
   margin:0;
   padding: 0;
