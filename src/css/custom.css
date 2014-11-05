@@ -69,7 +69,9 @@ height:400px;
   background: url(../images/wood.jpg) no-repeat;
   background-attachment: fixed;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
 }
 
 /* Triangles */
