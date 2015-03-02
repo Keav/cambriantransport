@@ -33,14 +33,12 @@
 
 <body id="home">
 
-<div class="fixed">
+<div class="fixed show-for-small-only">
   <div class="contain-to-grid">
     <nav class="top-bar" data-topbar data-options="is_hover: false" role="navigation">
 
       <ul class="title-area">
-        <li class="name">
-          <h1><a href="#home">CAMBRIAN TRANSPORT</a></h1>
-        </li>
+        <li class="name"></li>
         <li class="toggle-topbar menu-icon"><a href="#"><span>MENU</span></a></li>
       </ul>
 
@@ -74,6 +72,26 @@
     </div>
   </div>
 </section>
+
+  <div class="sticky hide-for-small-only">
+    <nav class="top-bar" data-topbar data-options="is_hover: false" role="navigation">
+
+      <ul class="title-area">
+        <li class="name"></li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span>MENU</span></a></li>
+      </ul>
+
+      <section class="top-bar-section">
+        <!-- <ul class="right"> -->
+        <ul>
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#about">Services</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </section>
+    </nav>
+  </div>
 
   <section class="content" id="about">
     <div class="row">
@@ -178,7 +196,7 @@
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 if (target.length) {
                     $('html,body').animate({
-                        scrollTop: target.offset().top
+                        scrollTop: (target.offset().top -45)
                     }, 1000, 'easeInOutExpo');
                     return false;
                 }
