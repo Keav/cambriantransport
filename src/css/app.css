@@ -67,12 +67,15 @@ NAV SECTION
 
   .top-bar {
     margin-top:-45px;
-    background: rgba(200,0,0,0.7);
+    background: rgba(30,31,25,0.9);
   }
 
-  .top-bar-section li:hover.active:not(.has-form) a:not(.button),
   .top-bar-section li.active:not(.has-form) a:not(.button) {
-    background:transparent;
+    background: rgba(250,0,0,0.7);
+  }
+
+  .top-bar-section li:hover.active:not(.has-form) a:not(.button) {
+    background: rgba(200,0,0,0.7);
   }
 
   .top-bar-section li:not(.has-form) a:not(.button) {
@@ -80,7 +83,7 @@ NAV SECTION
   }
 
   .top-bar-section li:hover:not(.has-form) a:not(.button) {
-    background:transparent;
+    background: rgba(200,0,0,0.7);
   }
 
   .fixed .top-bar {margin:0;}
