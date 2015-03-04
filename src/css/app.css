@@ -119,7 +119,7 @@ pointer-events: none;
 }
 
 .banner {
-  max-height:160px;
+  max-height:60%;
 }
 
 .splash {
@@ -157,7 +157,7 @@ background: transparent url(../images/section-arrow2.png) top center;
   line-height: 4rem;
 }
 
-.strap {
+.strap, .quote {
   font-family:arial;
   font-style: italic;
   font-size: 1rem;
@@ -166,6 +166,15 @@ background: transparent url(../images/section-arrow2.png) top center;
   margin:0;
   color:#fff;
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+.quote {
+  position: absolute;
+  width:100%;
+  text-align: center;
+  top:50%;
+  left:0;
+  margin-top:-1.6rem;
 }
 
 .caption {
@@ -243,9 +252,9 @@ footer p {
     margin:0;
   }*/
 
-  .banner {
+/*  .banner {
     max-height:500px;
-  }
+  }*/
 
   .splash {
     height:400px;
@@ -255,6 +264,17 @@ footer p {
     font-size: 2.8rem;
     line-height: 2.8rem;
     padding:30px 0;
+  }
+
+  .quote {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+
+  .panel i {
+    font-size: 7rem;
+    color: rgba(245,0,0,0.7);
+    text-shadow: 1px 4px 6px #FFF,0 0 0 #000,1px 4px 6px #FFF;
   }
 }
 
