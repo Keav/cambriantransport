@@ -9,7 +9,7 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON('package.json'),
 
         clean: {
-            build: ['dist/css/custom**.*', 'dist/js/custom**.*'],
+            build: ['dist/css/app**.*', 'dist/js/app**.*'],
         },
 
         imagemin: {
@@ -195,7 +195,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: 'src/',
-                    src: ['**/*.js', '!**/*.min.js'],
+                    src: ['**/*.js', '!**/*.min.js', '!**/js/foundation/**', '!**/js/vendor/**'],
                     dest: 'dist/',
                     ext: '.min.js',
                     extDot: 'last'
@@ -219,7 +219,7 @@ module.exports = function (grunt) {
                 // Files to hash
                 src: [
                     // WARNING: These files will be renamed!
-                    'src/**/*.css', 'src/**/*.js', '!**/*.min.*'
+                    'src/**/*.css', 'src/**/*.js', '!**/*.min.*', '!**/js/foundation/**', '!**/js/vendor/**'
                 ],
                 // File that refers to above files and needs to be updated with the hashed name
                 dest: 'dist/index.html',
@@ -232,7 +232,7 @@ module.exports = function (grunt) {
                 // Files to hash
                 src: [
                     // WARNING: These files will be renamed!
-                    'dist/css/custom.min.css',
+                    'dist/css/app.min.css',
                     'dist/js/custom.min.js'
                 ],
                 // File that refers to above files and needs to be updated with the hashed name
@@ -267,7 +267,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: 'src/',
-                    src: ['js/jquery**.min.js', '.htaccess'],
+                    src: ['js/jquery**.min.js', 'js/foundation.min.js', '**/.htaccess', '**/js/foundation/**', '**/js/vendor/**'],
                     dest: 'dist/',
                 }]
             },
