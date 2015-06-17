@@ -23,6 +23,30 @@ h1, h2, h3, h4, h5, h6 {
   color:#444;
 }
 
+/* Nice font and spacing found on http://premium.wpmudev.org/blog/improve-wordpress-development-workflow-local-server/ */
+/*<link rel="stylesheet" href="http://use.typekit.net/c/92c31f/1w;freight-sans-pro,2,TJC:R:i4,TJH:R:i6,TJ8:R:n3,TJB:R:n4,TJD:R:n5,TJG:R:n6;freight-text-pro,2,WHZ:R:i4,WHY:R:n4,WLw:R:n5/d?3bb2a6e53c9684ffdc9a98f51b5b2a629c34aeb0cd1eddbcfc1ab033e795e4008c48f6a4125963d113bd95bd8c8f26444b72ed47b49b024327e2c0471da908f3428c08e96edaae7c6feb55b5a3fc436188d65fb31d1d92f8d260e7225331a26039221d2b5c76100676644e9c5f85e0539c87ff6a2927b9362bec58b66962106c0f41cdc2841c12eddcd245372c465803f111d11279cbce9f3a8b338a3bb8aa9fe3d8367d3ca0649585cca5134dbdc7290b151956cd208eb982ac8a64d09c377aab59e6baa20433545d6623d0cdfe6a0b021ea743ca12143adceba4d9f606b0000319ae60ca704f" media="all">
+
+.article-style p {
+  font: 400 22px/35px "freight-sans-pro",sans-serif;
+  color: #555;
+  padding-left: 0;
+  padding-right: 0;
+  letter-spacing: 0;
+  margin-bottom: 20px;
+  word-break: break-word;
+
+  border: 0;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+
+}*/
+
+
+
+
 /* background cover and position fixed don't play nice. Must fix position the div, not the background. */
 
 /*.header-splash {
