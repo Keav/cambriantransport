@@ -9,7 +9,7 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON('package.json'),
 
         clean: {
-            build: ['dist/css/custom**.*', 'dist/js/custom**.*'],
+            build: ['dist/css/app**.*', 'dist/js/app**.*'],
         },
 
         imagemin: {
@@ -61,23 +61,6 @@ module.exports = function (grunt) {
             },
         },
 
-        htmlhint: {
-            build: {
-                options: {
-                    'tag-pair': true,
-                    'tagname-lowercase': true,
-                    'attr-lowercase': true,
-                    'attr-value-double-quotes': true,
-                    'doctype-first': true,
-                    'spec-char-escape': true,
-                    'id-unique': true,
-                    'head-script-disabled': true,
-                    'style-disabled': true
-                },
-                src: ['src/index.html']
-            }
-        },
-
         htmlmin: {
             dist: {
                 options: {
@@ -100,20 +83,6 @@ module.exports = function (grunt) {
                 },
                 files: {
                     'src/css/sass.css': 'src/scss/sass.scss'
-                }
-            }
-        },
-
-        compass: {
-            dist: {
-                options: {
-                    require: 'susy',
-                    sassDir: 'src/scss',
-                    cssDir: 'src/css',
-                    javascriptsDir: 'src/js',
-                    fontsDir: 'src/fonts',
-                    imagesDir: 'src/images',
-                    outputStyle: 'expanded'
                 }
             }
         },
@@ -177,25 +146,12 @@ module.exports = function (grunt) {
             }
         },
 
-        jshint: {
-            options: {
-                curly: true,
-                eqeqeq: true,
-                eqnull: true,
-                browser: true,
-                globals: {
-                    jQuery: true
-                },
-            },
-            uses_defaults: ['src/js/custom.js', 'Gruntfile.js'],
-        },
-
         uglify: {
             build: {
                 files: [{
                     expand: true,
                     cwd: 'src/',
-                    src: ['**/*.js', '!**/*.min.js'],
+                    src: ['**/*.js', '!**/*.min.js', '!**/js/foundation/**', '!**/js/vendor/**'],
                     dest: 'dist/',
                     ext: '.min.js',
                     extDot: 'last'
@@ -219,7 +175,7 @@ module.exports = function (grunt) {
                 // Files to hash
                 src: [
                     // WARNING: These files will be renamed!
-                    'src/**/*.css', 'src/**/*.js', '!**/*.min.*'
+                    'src/**/*.css', 'src/**/*.js', '!**/*.min.*', '!**/js/foundation/**', '!**/js/vendor/**'
                 ],
                 // File that refers to above files and needs to be updated with the hashed name
                 dest: 'dist/index.html',
@@ -232,7 +188,7 @@ module.exports = function (grunt) {
                 // Files to hash
                 src: [
                     // WARNING: These files will be renamed!
-                    'dist/css/custom.min.css',
+                    'dist/css/app.min.css',
                     'dist/js/custom.min.js'
                 ],
                 // File that refers to above files and needs to be updated with the hashed name
@@ -267,25 +223,10 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: 'src/',
-                    src: ['js/jquery**.min.js', '.htaccess'],
+                    src: ['js/jquery**.min.js', 'js/foundation.min.js', '**/.htaccess', '**/js/foundation/**', '**/js/vendor/**'],
                     dest: 'dist/',
                 }]
             },
-        },
-
-        'string-replace': {
-            inline: {
-                files: {'dist/index.html' : 'dist/index.html'},
-                options: {
-                    replacements: [
-                    // place files inline example
-                        {
-                            pattern: '</head>',
-                            replacement: '<script src="js/analytics.min.js" async></script></head>'
-                        }
-                    ]
-                }
-            }
         },
 
         shell: {
@@ -294,15 +235,20 @@ module.exports = function (grunt) {
             }
         },
 
-        connect: {
-            server: {
-                options: {
-                    livereload: true,
-                    hostname: 'localhost',
-                    port: 9001,
-                    base: 'src/',
-                    open: true
-                }
+        bump: {
+            options: {
+                files: ['package.json'],
+                updateConfigs: [],
+                commit: true,
+                commitMessage: 'Release v%VERSION%',
+                commitFiles: ['package.json'],
+                createTag: true,
+                tagName: 'v%VERSION%',
+                tagMessage: 'Version %VERSION%',
+                push: true,
+                pushTo: 'origin',
+                gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d',
+                globalReplace: false
             }
         },
 
@@ -323,19 +269,12 @@ module.exports = function (grunt) {
     });
 
     // Default task(s).
-    grunt.registerTask('default', ['connect', 'watch']);
-
-    // CSS tasks.
-    grunt.registerTask('buildcss', ['sass', 'cssmin']);
-
-    // Bump release version numbers
-    grunt.registerTask('release', ['shell:bumpVersion']);
-
-    grunt.registerTask('code', ['clean', 'newer:htmlmin', 'newer:uglify', 'newer:cssmin', 'hashres', 'newer:copy', 'string-replace']);
+    grunt.registerTask('default', ['watch']);
 
     // Interim Deployment
-    grunt.registerTask('deploy', ['clean', 'newer:imagemin', 'newer:htmlmin', 'newer:uglify', 'newer:cssmin', 'hashres', 'newer:copy', 'string-replace']);
+    grunt.registerTask('build', ['clean', 'autoprefixer', 'newer:imagemin', 'newer:htmlmin', 'newer:uglify', 'newer:cssmin', 'newer:copy', 'hashres']);
 
-    grunt.registerTask('copysrc', ['clean', 'copy']);
+    // Bump release version numbers
+    grunt.registerTask('release', ['bump:major']);
 
 };
