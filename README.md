@@ -2,8 +2,6 @@
 
 This project is to re-write the existing very dated website.
 
-## This is the Development Branch
+For project progress, please see the [Development](https://github.com/Keav/cambriantransport/tree/Development) Branch.
 
-Most development will occour directly here. However, distinctly identifiable units of work may be developed in their own sub-branches.
-
-http://89.145.77.23/~cambrian/
+http://cambriantransport.com
