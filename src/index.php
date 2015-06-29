@@ -1,106 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
+  <?php include('includes/head.php'); ?>
 
-  <meta charset="utf-8" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-
-  <meta name="robots" content="NOODP, NOYDIR"/>
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="http://cambriantransport.com" />
-
-  <meta name="description" content="Civil engineering in the railway industry." />
-
-  <link rel="alternate" hreflang="en-GB" href="http://cambriantransport.com/" />
-  <title>Cambrian Transport Limited</title>
-
-  <link rel="apple-touch-icon" href="images/custom_icon.png">
-  <link rel="icon" type="image/png" href="images/custom_icon.png">
-
-  <link href='http://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" href="foundation-icons/foundation-icons.css">
-
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/foundation.css">
-
-    <link rel="stylesheet" href="css/app.css" />
-
-    <script src="js/vendor/modernizr.js"></script>
 </head>
 
 <body id="home">
 
-<div class="fixed show-for-small-only">
-  <div class="contain-to-grid">
-    <nav class="top-bar" data-topbar data-options="is_hover: false" role="navigation">
+        <?php
+          switch($_SERVER['SERVER_NAME'])
+          {
+              case 'cambriantransport.com':
+                include('includes/google-tag.php');
+              break;
+          }
+        ?>
 
-      <ul class="title-area">
-        <li class="name"></li>
-        <li class="toggle-topbar menu-icon"><a href="#"><span>MENU</span></a></li>
-      </ul>
-
-      <section class="top-bar-section">
-        <ul class="right">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">Services</a></li>
-          <li><a href="#solutions">Solutions</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </section>
-    </nav>
-  </div>
-</div>
-
-<!-- <section>
-  <div class="row">
-    <div class="small-12 columns">
-      <p class="strap">&quot;Making your vision, a reality&quot;</p>
-    </div>
-  </div>
-</section> -->
-
-<section class="banner">
-  <img src="images/multi_track_greyscale.jpg" alt="" title="">
-  <div class="caption">
-    <div class="row">
-      <div class="small-12 columns">
-        <p class="strap">&quot;Making your vision, a reality&quot;</p>
-      </div>
-    </div>
-  </div>
-  <div class="companyname">
-    <div class="row">
-      <div class="small-12 columns">
-        <div class="page-title-wrapper">
-          <p>Cambrian Transport</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <div class="sticky hide-for-small-only">
-    <nav class="top-bar" data-topbar data-options="is_hover: false" role="navigation">
-
-      <ul class="title-area">
-        <li class="name"></li>
-        <li class="toggle-topbar menu-icon"><a href="#"><span>MENU</span></a></li>
-      </ul>
-
-      <section class="top-bar-section">
-        <!-- <ul class="right"> -->
-        <ul>
-          <li class="active"><a href="#home">Home</a></li>
-          <li><a href="#about">Services</a></li>
-          <li><a href="#solutions">Solutions</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </section>
-    </nav>
-  </div>
+  <?php include('includes/header.php'); ?>
 
   <section class="content" id="about">
 <!--     <div class="row">
@@ -169,47 +85,7 @@
     </div>
   </section>
 
-  <section class="contact" id="contact">
-    <div class="row">
-      <div class="small-12 columns">
-      <h1>Contact</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="medium-6 columns">
-        <p>Should you have any queries, please do not hesitate to get in touch.</p>
-        <address>
-          <p>Cambrian Transport Limited</p>
-          <p>Green Farm Country House</p>
-          <p>Falfield</p>
-          <p>Wotton-under-Edge</p>
-          <p>Gloucestershire</p>
-          <p>GL12 8DL</p>
-        </address>
-        <address>
-          <p><i class="fi-telephone"></i> : 01454 260319</p>
-          <p><i class="fi-mail"></i> : <a href="mailto:enquiries@cambriantransport.com">enquiries@cambriantransport.com</a></p>
-        </address>
-      </div>
-      <div class="medium-6 columns">
-        <div class="medium-6 medium-offset-3">
-          <img class="logo" src="images/ctl_logo.png" alt="" title="">
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-  <footer>
-    <div class="row">
-      <div class="medium-6 columns">
-        <p>Copyright &copy; 2015 Cambrian Transport Limited</p>
-      </div>
-      <div class="medium-6 columns">
-        <p>Website Design by Interstellar Creative</p>
-      </div>
-    </div>
-  </footer>
+  <?php include('includes/footer.php'); ?>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
