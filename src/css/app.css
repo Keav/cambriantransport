@@ -242,6 +242,7 @@ background: transparent url(../images/section-arrow2.png) top center;
   font-style: normal;
   text-transform: uppercase;
   background:#fff;
+  word-wrap: break-word;
 }
 
 .content {
@@ -342,6 +343,36 @@ footer p {
     color: rgba(245,0,0,0.7);
     text-shadow: 1px 4px 6px #FFF,0 0 0 #000,1px 4px 6px #FFF;
   }
+}
+
+address p {
+  margin: 0;
+  padding: 0;
+}
+
+address p:first-of-type:before {
+  font-family: 'FontAwesome';
+  /*font-family: foundation-icons;*/
+  position: absolute;
+  left: -1em;
+  width: 2em;
+  text-align: center;
+}
+
+address:first-of-type p:first-of-type:before {
+    content: '\f015';
+    /*content: '\f15a';*/
+
+}
+
+address:nth-of-type(2) p:first-of-type:before {
+    content: '\f0e0';
+    /*content: '\f1f8';*/
+}
+
+address:nth-of-type(3) p:first-of-type:before {
+    content: '\f095';
+        /*content: '\f16d';*/
 }
 
 /*******************************************************
