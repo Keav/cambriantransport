@@ -261,7 +261,7 @@ module.exports = function (grunt) {
                 tasks: ['sass'],
             },
             livereload: {
-                files: ['src/**/*.html', 'src/**/*.css', 'src/**/*.js'],
+                files: ['src/**/*.html', 'src/**/*.php', 'src/**/*.css', 'src/**/*.js'],
                 options: {livereload: true}
             }
         }
