@@ -15,7 +15,7 @@
           <p>GL12 8DL</p>
         </address>
         <address>
-          <p>01454 260319</p>
+          <p>+44 (0)1454 260319</p>
         </address>
         <address>
           <p><a href="mailto:enquiries@cambriantransport.com">enquiries@cambriantransport.com</a></p>
@@ -33,6 +33,7 @@
     <div class="row">
       <div class="medium-6 columns">
         <p>Copyright &copy; 2015 Cambrian Transport Limited</p>
+        <p>Registered in England and Wales. Company Number: 3144197</p>
       </div>
       <div class="medium-6 columns">
         <p>Website Design by <a href="http://chriskeavey.com/">Chris Keavey</p>
