@@ -31,11 +31,11 @@
 
   <footer>
     <div class="row">
-      <div class="medium-6 columns">
+      <div class="medium-7 columns">
         <p>Copyright &copy; 2015 Cambrian Transport Limited</p>
         <p>Registered in England and Wales. Company Number: 3144197</p>
       </div>
-      <div class="medium-6 columns">
+      <div class="medium-4 columns">
         <p>Website Design by <a href="http://chriskeavey.com/">Chris Keavey</p>
       </div>
     </div>
