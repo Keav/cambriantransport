@@ -313,13 +313,13 @@ address:first-of-type p:first-of-type:before {
 }
 
 address:nth-of-type(2) p:first-of-type:before {
-    content: '\f0e0';
-    /*content: '\f1f8';*/
+    content: '\f095';
+        /*content: '\f16d';*/
 }
 
 address:nth-of-type(3) p:first-of-type:before {
-    content: '\f095';
-        /*content: '\f16d';*/
+    content: '\f0e0';
+    /*content: '\f1f8';*/
 }
 
 footer, footer div {
