@@ -18,13 +18,8 @@
 
   <?php include('includes/header.php'); ?>
 
-  <section class="content" id="about">
-<!--     <div class="row">
-      <div class="small-12 columns">
-        <h1>Cambrian Transport</h1>
-      </div>
-    </div> -->
-    <div class="row">
+  <section class="grey" id="about">
+    <div class="row content">
       <div class="small-12 columns">
         <p>Cambrian Transport Limited is a civil engineering company specialising in the railway industry.</p>
         <p>We provide consultancy services across a broad spectrum of activities and aim for an exceptional level of commitment to clients.</p>
@@ -67,16 +62,16 @@
     </div>
   </section>
 
-  <!-- <section class="banner"> -->
+  <section>
     <div class="banner splash">
       <div class="row">
         <p class="quote">We aim to be the first choice for Transport Consultancy services.</p>
       </div>
     </div>
-  <!-- </section> -->
+  </section>
 
-    <section class="content" id="solutions">
-    <div class="row">
+    <section id="solutions">
+    <div class="row content">
       <div class="small-12 columns">
         <h1>Depot Solutions</h1>
         <p>Cambrian Transport have developed a number of innovative, cost effective and environmentally friendly modular systems. These can be combined and adapted to meet the needs of rail depot operators and project teams, to provide safe and efficient facilities for inspection and maintenance of rail vehicles and plant. The speed of delivery and flexibility of these systems is such that they are suitable for both permanent and temporary depots.</p>

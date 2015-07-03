@@ -178,6 +178,7 @@ pointer-events: none;
   display: inline-block;
   font-size: 1.5rem;
   line-height: 1.5rem;
+  font-style: italic;
   float: right;
   color: #fff;
   background: #000;
@@ -196,6 +197,11 @@ pointer-events: none;
   height: 160px;
   background: url(../images/grey_track.jpg) no-repeat center center;
   background-size: cover;
+}
+
+.grey {
+  background: linear-gradient(to top, rgba(230,230,230,1), rgba(230,230,230,0.4));
+  /*color: #fff;*/
 }
 
 /*.banner:after {
@@ -263,12 +269,13 @@ background: transparent url(../images/section-arrow2.png) top center;
 }
 
 .content {
-  padding: 30px 0;
+  padding: 160px 0;
 }
 
 .contact {
   color: #fff;
   background: #1f1f1f;
+  padding: 30px 0;
 }
 
 /*.contact h1 {
