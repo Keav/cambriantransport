@@ -30,7 +30,6 @@
         <p>We provide consultancy services across a broad spectrum of activities and aim for an exceptional level of commitment to clients.</p>
         <p>Cambrian Transport comprises individuals who are passionate about transport systems and their future.
         We are confident that we have the mix of skills and experience to positively contribute to the development of the transport industry and provide a first class service to our clients.</p>
-        <p>We aim to be the first choice for Transport Consultancy services.</p>
       </div>
     </div>
   </section>
