@@ -27,22 +27,12 @@
   </div>
 </section> -->
 
-<section class="banner">
-  <img src="images/multi_track_greyscale.jpg" alt="" title="">
-  <div class="caption">
-    <div class="row">
-      <div class="small-12 columns">
-        <p class="strap">&quot;Making your vision, a reality&quot;</p>
-      </div>
-    </div>
-  </div>
-  <div class="companyname">
-    <div class="row">
-      <div class="small-12 columns">
-        <div class="page-title-wrapper">
-          <p>Cambrian Transport</p>
-        </div>
-      </div>
+<section class="header">
+  <!-- <img src="images/multi_track_greyscale.jpg" alt="" title=""> -->
+  <div class="row">
+    <div class="headerText">
+        <p class="company">CAMBRIAN TRANSPORT</p>
+        <p class="motto">&#8220;Making your vision a reality&#8221;</p>
     </div>
   </div>
 </section>
