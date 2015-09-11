@@ -3,28 +3,12 @@ RewriteOptions inherit
 
 RewriteEngine on
 
-RewriteCond %{HTTP_HOST} ^www\.chriskeavey\.com$
-RewriteRule ^(.*)$ "http\:\/\/chriskeavey\.com\/$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.cambriantransport\.com$
+RewriteRule ^(.*)$ "http\:\/\/cambriantransport\.com\/$1" [R=301,L]
 
-RewriteCond %{HTTP_HOST} ^chriskeavey\.info$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.chriskeavey\.info$
-RewriteRule ^/?$ "http\:\/\/chriskeavey\.com\/" [R=301,L]
-
-RewriteCond %{HTTP_HOST} ^chriskeavey\.uk$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.chriskeavey\.uk$
-RewriteRule ^/?$ "http\:\/\/chriskeavey\.com\/" [R=301,L]
-
-RewriteCond %{HTTP_HOST} ^chriskeavey\.org$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.chriskeavey\.org$
-RewriteRule ^/?$ "http\:\/\/chriskeavey\.com\/" [R=301,L]
-
-RewriteCond %{HTTP_HOST} ^chriskeavey\.net$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.chriskeavey\.net$
-RewriteRule ^/?$ "http\:\/\/chriskeavey\.com\/" [R=301,L]
-
-RewriteCond %{HTTP_HOST} ^chriskeavey\.co\.uk$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.chriskeavey\.co\.uk$
-RewriteRule ^/?$ "http\:\/\/chriskeavey\.com\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^cambriantransport\.co\.uk$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.cambriantransport\.co\.uk$
+RewriteRule ^/?$ "http\:\/\/cambriantransport\.com\/" [R=301,L]
 
 <IfModule mod_headers.c>
     Header set X-UA-Compatible "IE=edge,chrome=1"
@@ -120,7 +104,8 @@ AddDefaultCharset utf-8
     RewriteRule "(^|/)\." - [F]
 </IfModule>
 
-<FilesMatch "(^#.*#|\.(pdf|doc|docx|xls|xlsx|bak|conf|dist|fla|in[ci]|log|psd|sh|sql|sw[op])|~)$">
+# pdf removed from the following because of press release documents
+<FilesMatch "(^#.*#|\.(doc|docx|xls|xlsx|bak|conf|dist|fla|in[ci]|log|psd|sh|sql|sw[op])|~)$">
 
     # Apache < 2.3
     <IfModule !mod_authz_core.c>
