@@ -12,8 +12,9 @@
   <link rel="alternate" hreflang="en-GB" href="http://cambriantransport.com/" />
   <title>Cambrian Transport Limited</title>
 
-  <link rel="apple-touch-icon" href="images/custom_icon.png">
-  <link rel="icon" type="image/png" href="images/custom_icon.png">
+<!--   <link rel="apple-touch-icon" href="images/custom_icon.png">
+  <link rel="icon" type="image/png" href="images/custom_icon.png"> -->
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
 
   <link href='http://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
 
