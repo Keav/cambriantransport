@@ -19,23 +19,15 @@
   </div>
 </div>
 
-<!-- <section>
-  <div class="row">
-    <div class="small-12 columns">
-      <p class="strap">&quot;Making your vision, a reality&quot;</p>
-    </div>
-  </div>
-</section> -->
-
-<section class="header">
-  <!-- <img src="images/multi_track_greyscale.jpg" alt="" title=""> -->
-  <div class="row">
-    <div class="headerText">
+  <section class="header">
+    <div class="row">
+      <div class="headerText">
         <p class="company">CAMBRIAN TRANSPORT</p>
         <p class="motto">&#8220;Making your vision a reality&#8221;</p>
+      </div>
     </div>
-  </div>
-</section>
+    <div class="bg"></div>
+  </section>
 
   <div class="sticky hide-for-small-only">
     <nav class="top-bar" data-topbar data-options="is_hover: false" role="navigation">
