@@ -36,7 +36,7 @@
         <p>Registered in England and Wales. Company Number: 3144197</p>
       </div>
       <div class="medium-4 columns">
-        <p>Website Design by <a href="http://chriskeavey.com/">Chris Keavey</p>
+        <p>Website Design by <a href="http://chriskeavey.com/">Chris Keavey</a></p>
       </div>
     </div>
   </footer>
