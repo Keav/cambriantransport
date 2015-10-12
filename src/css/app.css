@@ -146,19 +146,33 @@ content: '';
 pointer-events: none;
 }
 
+.bg {
+  position: relative;
+  /*z-index: -1;*/
+  height: 500px;
+  background-image: url('../images/multi_track_greyscale.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-size: 100% 100%;*/
+}
+
 .header {
   height: 500px;
-  color: #fff;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,100,0,0.75));
-  background-image: url('../images/multi_track_greyscale.jpg');
-  background-size: cover;
+  /*background: transparent;*/
+  /*color: #fff;*/
+  /*background-image: linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,100,0,0.75));*/
+  /*background-image: url('../images/multi_track_greyscale.jpg');*/
+  /*background-size: cover;*/
+  /*z-index: 1;*/
 }
 
 .headerText {
+  position: absolute;
   display: inline-block;
   background: transparent;
   transform: translate(0, 0);
   margin-right: 0;
+  z-index: 1;
 }
 
 .company, .motto {
