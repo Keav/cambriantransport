@@ -130,7 +130,16 @@
      //     Foundation.libs.topbar.toggle($('.top-bar'));
      // });
     /*jslint unparam:false */
+    </script>
 
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(window).on('scroll', function() {
+          yPos = window.pageYOffset;
+          shift = yPos * 0.8 + 'px';
+          $('.bg').css('top', shift);
+        });
+      });
     </script>
 
 </body>
