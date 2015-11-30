@@ -16,11 +16,15 @@
           }
         ?>
 
+  <?php $page = "pit"; ?>
   <?php include('includes/header.php'); ?>
 
   <section class="grey" id="about">
     <div class="row content">
-      <div class="small-12 columns">
+      <div class="small-12 medium-3 columns" style="padding-top:1rem;text-align:center;@media(min-width:640px){text-align:left;)">
+        <img src="images/inside_coleham.jpg" alt="">
+      </div>
+      <div class="small-12 medium-9 columns">
         <h3>Modular Pre-Cast Concrete Inspection Pit</h3>
         <p>Cambrian Transport have developed a system of modular, pre-cast concrete inspection pit units. Their first installation was designed to provide a semi-permanent inspection and maintenance pit facility for a track renewals contractor who required a depot with just a two-year operational life. A tight project deadline meant that the pit had to be constructed in as short a time as practicable.</p>
 
@@ -56,58 +60,6 @@
 
 
   <?php include('includes/footer.php'); ?>
-
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-
-    <!-- jQuery easing functions library -->
-    <script src="js/jquery.easing.1.3.js"></script>
-
-<!--     <script>
-      $(document).foundation();
-    </script> -->
-
-    <script>
-      $(document).foundation({
-        equalizer: {
-          equalize_on_stack: true
-        },
-        topbar: {
-          scrolltop : false
-        }
-      });
-    </script>
-
-    <script type="text/javascript">
-
-          $('a[href*=#]:not([href=#])').click(function () {
-            if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') || location.hostname === this.hostname) {
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: (target.offset().top -45)
-                    }, 1000, 'easeInOutExpo');
-                    return false;
-                }
-            }
-        });
-    </script>
-
-    <script type="text/javascript">
-    // Collapse navbar when anywhere on page is clicked AND when nav links are clicked.
-    /*jslint unparam:true */
-    // $("body, nav a, .top-bar-section li").click(function () {
-    //         $('nav').removeClass('expanded');
-    // });
-
-     // $(document).on("click", ".top-bar-section li", function () {
-     //     Foundation.libs.topbar.toggle($('.top-bar'));
-     // });
-    /*jslint unparam:false */
-
-    </script>
 
 </body>
 </html>

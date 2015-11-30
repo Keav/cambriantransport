@@ -16,6 +16,7 @@
           }
         ?>
 
+  <?php $page = "sa"; ?>
   <?php include('includes/header.php'); ?>
 
   <section id="about">
@@ -35,19 +36,19 @@
 
   <section class="darkgrey">
     <div class="row content">
-      <div class="small-6 columns">
+      <div class="small-12 large-6 columns">
         <div class="flex-video widescreen youtube">
           <iframe width="" height="" src="https://www.youtube.com/embed/YgJHU_kWSxA" frameborder="0" allowfullscreen=""></iframe>
         </div>
       </div>
-      <div class="small-6 columns">
+      <div class="small-12 large-6 columns">
         <div>
           <h3>SOFT ARREST SYSTEM</h3>
           <p>A Soft Arrest System designed to protect anyone working t height. Especially suited to the Rail and Transport industry, but could be applied to anywhere that there is regular working at height.</p>
         </div>
-        <div>
+<!--         <div>
           <a class="button" href="sa.php">LEARN MORE</a>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -63,58 +64,6 @@
   </section>
 
   <?php include('includes/footer.php'); ?>
-
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-
-    <!-- jQuery easing functions library -->
-    <script src="js/jquery.easing.1.3.js"></script>
-
-<!--     <script>
-      $(document).foundation();
-    </script> -->
-
-    <script>
-      $(document).foundation({
-        equalizer: {
-          equalize_on_stack: true
-        },
-        topbar: {
-          scrolltop : false
-        }
-      });
-    </script>
-
-    <script type="text/javascript">
-
-          $('a[href*=#]:not([href=#])').click(function () {
-            if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') || location.hostname === this.hostname) {
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: (target.offset().top -45)
-                    }, 1000, 'easeInOutExpo');
-                    return false;
-                }
-            }
-        });
-    </script>
-
-    <script type="text/javascript">
-    // Collapse navbar when anywhere on page is clicked AND when nav links are clicked.
-    /*jslint unparam:true */
-    // $("body, nav a, .top-bar-section li").click(function () {
-    //         $('nav').removeClass('expanded');
-    // });
-
-     // $(document).on("click", ".top-bar-section li", function () {
-     //     Foundation.libs.topbar.toggle($('.top-bar'));
-     // });
-    /*jslint unparam:false */
-
-    </script>
 
 </body>
 </html>
