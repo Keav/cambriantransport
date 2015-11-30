@@ -5,16 +5,16 @@ html {
 
 body {
   width: 100%;
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 14px;
+  font-size: 1.4rem;
   color: #555;
   background: #fff;
-  padding-top: 45px;
+  /*padding-top: 45px;*/
 }
 
 body p {
 /*    background-image: url(../images/multi_track_greyscale.jpg);*/
-font-size: 1.25rem;
+font-size: 1rem;
 /*font-weight: bold;*/
 }
 
@@ -76,11 +76,18 @@ NAV SECTION
   }
 
   .f-topbar-fixed {
-    margin-top: -45px;
+    padding-top:0 !important;
+    margin-top: 45px;
   }
 
   .fixed {
     position: fixed;
+/*    padding-top:45px;
+    margin-top: 0;*/
+  }
+
+  .fixed .top-bar {
+    /*margin-top:-45px;*/
   }
 
   /*.navbar {
@@ -93,7 +100,8 @@ NAV SECTION
   }*/
 
   .top-bar {
-    margin-top: -45px;
+    /*margin-top: -45px;*/
+    /*transform: translateY(-45px);*/
     background: rgba(30,31,25,0.9);
   }
 
@@ -112,8 +120,6 @@ NAV SECTION
   .top-bar-section li:hover:not(.has-form) a:not(.button) {
     background: rgba(200,0,0,0.7);
   }
-
-  .fixed .top-bar {margin:0;}
 
   .top-bar-section ul li {
     background: transparent;
@@ -152,7 +158,7 @@ pointer-events: none;
 .bg {
   position: relative;
   /*z-index: -1;*/
-  height: 500px;
+  height: 400px;
   background-image: url('../images/multi_track_greyscale.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -160,7 +166,7 @@ pointer-events: none;
 }
 
 .header {
-  height: 500px;
+  height: 400px;
   /*background: transparent;*/
   /*color: #fff;*/
   /*background-image: linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,100,0,0.75));*/
@@ -204,7 +210,7 @@ pointer-events: none;
 
 @media all and (min-width: 640px) {
   .headerText {
-    transform: translate(250px, 150px);
+    transform: translate(250px, 70px);
     margin-right: 300px;
   }
 }
@@ -220,6 +226,25 @@ pointer-events: none;
   background: linear-gradient(to top, rgba(230,230,230,1), rgba(230,230,230,0.4));
   /*color: #fff;*/
 }
+
+.darkgrey {
+  padding: 50px;
+  background: #333;
+  color: #fff;
+}
+
+.darkgrey h3 {
+  color: #fff;
+}
+
+.button {
+  background-color: #333;
+  border-width: 2px;
+  border-color: #fff;
+  font-weight: bold;
+  color: #fff;
+}
+
 
 /*.banner:after {
 content: '';
@@ -286,7 +311,7 @@ background: transparent url(../images/section-arrow2.png) top center;
 }
 
 .content {
-  padding: 160px 0;
+  padding: 40px 0;
 }
 
 .contact {
@@ -425,6 +450,16 @@ footer div div:nth-of-type(2) p {
     font-size: 7rem;
     color: rgba(245,0,0,0.7);
     text-shadow: 1px 4px 6px #FFF,0 0 0 #000,1px 4px 6px #FFF;
+  }
+
+   section i {
+    font-size: 3rem;
+    color: rgba(245,0,0,0.7);
+    text-shadow: 1px 4px 6px #FFF,0 0 0 #000,1px 4px 6px #FFF;
+  }
+
+  .ic {
+    margin: 0 auto;
   }
 }
 
