@@ -40,10 +40,10 @@
       <section class="top-bar-section">
         <!-- <ul class="right"> -->
         <ul>
-          <li class="active"><a href="#home">Home</a></li>
-          <li><a href="#about">Services</a></li>
-          <li><a href="#solutions">Solutions</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="company.php">About Us</a></li>
+          <li><a href="sa.php">Soft Arrest</a></li>
+          <li><a href="pit.php">Modular Pit</a></li>
         </ul>
       </section>
     </nav>
