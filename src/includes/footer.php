@@ -1,9 +1,9 @@
   <section class="contact" id="contact">
-    <div class="row">
+<!--     <div class="row">
       <div class="small-12 columns">
       <h1>Contact</h1>
       </div>
-    </div>
+    </div> -->
     <div class="row">
       <div class="medium-6 columns">
         <address>
