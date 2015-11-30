@@ -9,10 +9,11 @@
 
       <section class="top-bar-section">
         <ul class="right">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">Services</a></li>
-          <li><a href="#solutions">Solutions</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li <?php if($page == "home") echo 'class="active"' ?>><a href="/">Home</a></li>
+          <li <?php if($page == "about") echo 'class="active"' ?>><a href="company.php">About Us</a></li>
+          <li <?php if($page == "sa") echo 'class="active"' ?>><a href="sa.php">Soft Arrest</a></li>
+          <li <?php if($page == "pit") echo 'class="active"' ?>><a href="pit.php">Modular Pit</a></li>
+          <li <?php if($page == "canopy") echo 'class="active"'; ?>><a href="canopy.php">Canopy Building</a></li>
         </ul>
       </section>
     </nav>
@@ -40,10 +41,11 @@
       <section class="top-bar-section">
         <!-- <ul class="right"> -->
         <ul>
-          <li class="active"><a href="/">Home</a></li>
-          <li><a href="company.php">About Us</a></li>
-          <li><a href="sa.php">Soft Arrest</a></li>
-          <li><a href="pit.php">Modular Pit</a></li>
+          <li <?php if($page == "home") echo 'class="active"'; ?>><a href="/">Home</a></li>
+          <li <?php if($page == "about") echo 'class="active"'; ?>><a href="company.php">About Us</a></li>
+          <li <?php if($page == "sa") echo 'class="active"'; ?>><a href="sa.php">Soft Arrest</a></li>
+          <li <?php if($page == "pit") echo 'class="active"'; ?>><a href="pit.php">Modular Pit</a></li>
+          <li <?php if($page == "canopy") echo 'class="active"'; ?>><a href="canopy.php">Canopy Building</a></li>
         </ul>
       </section>
     </nav>
