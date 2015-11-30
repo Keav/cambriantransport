@@ -18,10 +18,10 @@
 
   <?php include('includes/header.php'); ?>
 
-  <section class="grey" id="about">
+  <section id="about">
     <div class="row content">
       <div class="small-12 columns">
-        <h1>Soft Arrest System</h1>
+        <h3>Soft Arrest System</h3>
         <p>Another innovative solution to a longstanding industry safety hazard has been developed to meet one particular operator's urgent requirement. This is the Cambrian Soft Arrest System which ensures safe working for maintenance operatives while working at heights on and around rail vehicles. The system is a step-change improvement over conventional fixed lanyard and harness systems in use in most depots.</p>
 
         <p>The Soft Arrest System is an easy-to-use harness system worn by the operative which allows free access along the entire length of rail vehicles while working at height. In the event of a fall, the Soft Arrest System lowers the operative safely and gently to floor level where aid can be given if required.</p>
@@ -33,7 +33,7 @@
     </div>
   </section>
 
-  <section>
+  <section class="darkgrey">
     <div class="row content">
       <div class="small-6 columns">
         <div class="flex-video widescreen youtube">
@@ -46,21 +46,11 @@
           <p>A Soft Arrest System designed to protect anyone working t height. Especially suited to the Rail and Transport industry, but could be applied to anywhere that there is regular working at height.</p>
         </div>
         <div>
-          <a class="button" href="http://cambriantransport.com/sa.php">LEARN MORE</a>
+          <a class="button" href="sa.php">LEARN MORE</a>
         </div>
       </div>
-
     </div>
-
   </section>
-
-<!--   <section>
-    <div class="banner splash">
-      <div class="row">
-        <p class="quote">We aim to be the first choice for Transport Consultancy services.</p>
-      </div>
-    </div>
-  </section> -->
 
   <section class="grey" id="about">
     <div class="row content">
@@ -71,8 +61,6 @@
       </div>
     </div>
   </section>
-
-
 
   <?php include('includes/footer.php'); ?>
 
