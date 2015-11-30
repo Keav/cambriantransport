@@ -19,7 +19,7 @@
   <link href='http://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="foundation-icons/foundation-icons.css">
-  <link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.css">
+  <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.css">
 
 
   <link rel="stylesheet" href="css/normalize.css">
