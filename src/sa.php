@@ -23,7 +23,7 @@
     <div class="row content">
       <div class="small-12 columns">
         <h3>Soft Arrest System</h3>
-        <p>Another innovative solution to a longstanding industry safety hazard has been developed to meet one particular operator's urgent requirement. This is the Cambrian Soft Arrest System which ensures safe working for maintenance operatives while working at heights on and around rail vehicles. The system is a step-change improvement over conventional fixed lanyard and harness systems in use in most depots.</p>
+        <p>Another innovative solution to a longstanding industry safety hazard has been developed to meet one particular operator's urgent requirement. This is the &#39;Cambrian Soft Arrest System&#39; which ensures safe working for maintenance operatives while working at heights on and around rail vehicles. The system is a step-change improvement over conventional fixed lanyard and harness systems in use in most depots.</p>
 
         <p>The Soft Arrest System is an easy-to-use harness system worn by the operative which allows free access along the entire length of rail vehicles while working at height. In the event of a fall, the Soft Arrest System lowers the operative safely and gently to floor level where aid can be given if required.</p>
 
@@ -44,7 +44,7 @@
       <div class="small-12 large-6 columns">
         <div>
           <h3>SOFT ARREST SYSTEM</h3>
-          <p>A Soft Arrest System designed to protect anyone working t height. Especially suited to the Rail and Transport industry, but could be applied to anywhere that there is regular working at height.</p>
+          <p>A Soft Arrest System designed to protect anyone working at height. Especially suited to the Rail and Transport industry, but could be applied to anywhere that there is regular working at height.</p>
         </div>
 <!--         <div>
           <a class="button" href="sa.php">LEARN MORE</a>
