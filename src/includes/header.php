@@ -9,7 +9,7 @@
 
       <section class="top-bar-section">
         <ul class="right">
-          <li <?php if($page == "home") echo 'class="active"' ?>><a href="/">Home</a></li>
+          <li <?php if($page == "home") echo 'class="active"' ?>><a href="index.php">Home</a></li>
           <li <?php if($page == "about") echo 'class="active"' ?>><a href="company.php">About Us</a></li>
           <li <?php if($page == "sa") echo 'class="active"' ?>><a href="sa.php">Soft Arrest</a></li>
           <li <?php if($page == "pit") echo 'class="active"' ?>><a href="pit.php">Modular Pit</a></li>
@@ -41,7 +41,7 @@
       <section class="top-bar-section">
         <!-- <ul class="right"> -->
         <ul>
-          <li <?php if($page == "home") echo 'class="active"'; ?>><a href="/">Home</a></li>
+          <li <?php if($page == "home") echo 'class="active"'; ?>><a href="index.php">Home</a></li>
           <li <?php if($page == "about") echo 'class="active"'; ?>><a href="company.php">About Us</a></li>
           <li <?php if($page == "sa") echo 'class="active"'; ?>><a href="sa.php">Soft Arrest</a></li>
           <li <?php if($page == "pit") echo 'class="active"'; ?>><a href="pit.php">Modular Pit</a></li>
