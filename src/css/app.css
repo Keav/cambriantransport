@@ -226,7 +226,7 @@ pointer-events: none;
 
 
 .headerText {
-  transform: translate(20px, 70px);
+  transform: translate(20px, 150px);
   margin-right: 30px;
 }
 
@@ -257,7 +257,7 @@ pointer-events: none;
   }
 
   .headerText {
-    transform: translate(250px, 70px);
+    transform: translate(250px, 100px);
     margin-right: 300px;
   }
 }
