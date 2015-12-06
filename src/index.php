@@ -37,7 +37,8 @@
           <li>
             <!-- <div class="panel hvr-glow"> -->
               <div class="text-center" data-equalizer-watch>
-                <i class="fi-lightbulb"></i>
+                <!-- <i class="fi-lightbulb"></i> -->
+                <i class="fa fa-lightbulb-o fa-2x"></i>
                 <h3>Innovation</h3>
                 <p>Cambrian Transport specialises in providing innovative solutions to improve safety or increase efficiency.</p>
             </div>
@@ -45,7 +46,8 @@
           <li>
             <!-- <div class="panel hvr-glow"> -->
               <div class="text-center" data-equalizer-watch>
-                <i class="fi-link"></i>
+                <!-- <i class="fi-link"></i> -->
+                <i class="fa fa-link fa-2x"></i>
                 <h3>Collaboration</h3>
                 <p>We will work with you to achieve <em>your</em> aims.</p>
             </div>
@@ -53,12 +55,13 @@
           <li>
             <!-- <div class="panel hvr-glow"> -->
               <div class="text-center" data-equalizer-watch>
-                <i class="fi-clock"></i>
+                <!-- <i class="fi-clock"></i> -->
+                <i class="fa fa-clock-o fa-2x"></i>
                 <h3>Agile</h3>
                 <p>We specialise in being responsive and agile. Many of our innovative solutions were developed with rapid deployment in mind.</p>
             </div>
           </li>
-        </ul>
+        <!-- </ul>
       </div>
     </div>
   </section>
@@ -66,7 +69,7 @@
     <section>
     <div class="row content" data-equalizer>
       <div class="small-12 columns">
-        <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+        <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3"> -->
           <li>
             <!-- <div class="panel hvr-glow"> -->
               <div class="text-center" data-equalizer-watch>
