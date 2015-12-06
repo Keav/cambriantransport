@@ -513,11 +513,11 @@ footer div div:nth-of-type(2) p {
   }
 }
 
-   section i {
-    font-size: 3rem;
-    color: rgba(245,0,0,0.7);
-    text-shadow: 1px 4px 6px #FFF,0 0 0 #000,1px 4px 6px #FFF;
-  }
+section i {
+  font-size: 3rem;
+  color: rgba(245,0,0,0.7);
+  text-shadow: 1px 4px 6px #FFF,0 0 0 #000,1px 4px 6px #FFF;
+}
 
 /*******************************************************
 ********************************************************
