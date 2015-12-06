@@ -69,13 +69,12 @@ h1, h2, h3, h4, h5, h6 {
 NAV SECTION
 *****************************************************/
 
-@media (min-width:642px) {
+/*@media (min-width:642px) {*/
 
   body {
     /*padding-top: 45px;*/
     /*margin-top: -45px;*/
   }
-
 
   .f-topbar-fixed {
     padding-top:0 !important;
@@ -136,7 +135,7 @@ NAV SECTION
   .top-bar-section ul li {
     background: transparent;
   }
-}
+/*}*/
 
 /****************************************************
 END NAV SECTION
@@ -147,11 +146,16 @@ padding: 0 50px;
 }*/
 
 .logo {
-  position: absolute;
   top: 0;
   /*right: 0;*/
   width: 200px;
   height: auto;
+}
+
+@media (min-width: 642px) {
+  .logo {
+      position: absolute;
+  }
 }
 
 section {
@@ -227,7 +231,7 @@ pointer-events: none;
 }
 
 
-@media all and (min-width: 640px) {
+@media all and (min-width: 642px) {
   .company, .motto {
     padding: 10px;
     margin:0;
@@ -276,7 +280,7 @@ pointer-events: none;
   color: #fff;
 }
 
-@media (min-width:640px){
+@media (min-width:642px){
   .darkgrey {
     padding: 50px;
     background: #333;
@@ -503,16 +507,17 @@ footer div div:nth-of-type(2) p {
     text-shadow: 1px 4px 6px #FFF,0 0 0 #000,1px 4px 6px #FFF;
   }
 
-   section i {
-    font-size: 3rem;
-    color: rgba(245,0,0,0.7);
-    text-shadow: 1px 4px 6px #FFF,0 0 0 #000,1px 4px 6px #FFF;
-  }
 
   .ic {
     margin: 0 auto;
   }
 }
+
+   section i {
+    font-size: 3rem;
+    color: rgba(245,0,0,0.7);
+    text-shadow: 1px 4px 6px #FFF,0 0 0 #000,1px 4px 6px #FFF;
+  }
 
 /*******************************************************
 ********************************************************
