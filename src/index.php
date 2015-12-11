@@ -31,7 +31,7 @@
   </section>
 
   <section>
-    <div class="row content" data-equalizer>
+    <div class="row content specialties" data-equalizer>
       <div class="small-12 columns">
         <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
           <li>
@@ -100,7 +100,7 @@
   </section>
 
   <section class="grey">
-    <div class="row content" data-equalizer>
+    <div class="row content specialties" data-equalizer>
       <div class="small-12 columns">
         <ul class="small-block-grid-1">
           <li>

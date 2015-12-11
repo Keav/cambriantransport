@@ -20,6 +20,9 @@
         <address>
           <p><a href="mailto:enquiries@cambriantransport.com">enquiries@cambriantransport.com</a></p>
         </address>
+        <address>
+          <p><a href="https://plus.google.com/117477509105914475092/about">Google+ Page</a></p>
+        </address>
       </div>
       <div class="medium-6 columns">
         <div class="medium-6 medium-offset-3">

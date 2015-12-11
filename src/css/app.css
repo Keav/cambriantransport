@@ -425,6 +425,11 @@ address:nth-of-type(3) p:first-of-type:before {
     /*content: '\f1f8';*/
 }
 
+address:nth-of-type(4) p:first-of-type:before {
+    content: '\f0d5';
+    /*content: '\f1f8';*/
+}
+
 footer, footer div {
   padding: 0.5rem 0;
   color: #888;
@@ -519,7 +524,7 @@ footer div div:nth-of-type(2) p {
   }
 }
 
-section i {
+section .specialties i {
   font-size: 3rem;
   color: rgba(245,0,0,0.7);
   text-shadow: 1px 4px 6px #FFF,0 0 0 #000,1px 4px 6px #FFF;
