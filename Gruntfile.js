@@ -178,7 +178,7 @@ module.exports = function (grunt) {
                     'src/**/*.css', 'src/**/*.js', '!**/*.min.*', '!**/js/foundation/**', '!**/js/vendor/**'
                 ],
                 // File that refers to above files and needs to be updated with the hashed name
-                dest: 'dist/index.html',
+                dest: 'dist/includes/head.php',
             },
             prod: {
                 // Specific options, override the global ones
@@ -192,7 +192,7 @@ module.exports = function (grunt) {
                     'dist/js/custom.min.js'
                 ],
                 // File that refers to above files and needs to be updated with the hashed name
-                dest: 'dist/index.html',
+                dest: 'dist/includes/head.php',
             }
         },
 
@@ -223,7 +223,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: 'src/',
-                    src: ['js/jquery**.min.js', 'js/foundation.min.js', '**/.htaccess', '**/js/foundation/**', '**/js/vendor/**'],
+                    src: ['**/*.php', 'js/jquery**.min.js', 'js/foundation.min.js', '**/.htaccess', '**/js/foundation/**', '**/js/vendor/**'],
                     dest: 'dist/',
                 }]
             },
